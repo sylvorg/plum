@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "plum-off"
+version = "1.0.0.0"
+description = "... plum-off!"
+authors = ["sylvorg <jeet.ray@syvl.org>"]
+license = "MIT"
+include = [
+	"plum_off/**/*.py",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+beartype = { git = "https://github.com/beartype/beartype.git", rev = "75e64bc857d26a2e59e4d4743cedd66d2f68a5d4" }
+plum_dispatch = "^2.3.2"
+rich = "*"
+
+[tool.poetry.dev-dependencies]
+poetry = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
